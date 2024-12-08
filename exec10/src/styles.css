@@ -1,0 +1,96 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f7f8fc; /* Light pastel background */
+  color: #222; /* Darker text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* App Container */
+.App {
+  background: #ffffff; /* Bright white card */
+  border-radius: 16px; /* Slightly rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.App:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Counter Display */
+.counter-display {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #5c67e1; /* Pastel blue */
+  text-shadow: 1px 1px 4px rgba(92, 103, 225, 0.3); /* Subtle shadow effect */
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.counter-display:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 8px rgba(92, 103, 225, 0.5);
+}
+
+/* Button Group */
+.controls {
+  display: flex;
+  justify-content: space-evenly; /* Evenly spaced buttons */
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Button Styles */
+button {
+  flex: 1;
+  padding: 14px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #5c67e1, #a1abf4); /* Gradient pastel blue */
+  border: none;
+  border-radius: 10px; /* Rounded buttons */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #a1abf4, #d1d7fc); /* Brighter hover effect */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+button:active {
+  background: #5c67e1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #666;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+footer:hover {
+  opacity: 1;
+}
